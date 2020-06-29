@@ -8,6 +8,7 @@ metadata:
   namespace: deploy
   annotations:
     fluxcd.io/automated: "true"
+    fluxcd.io/tag.podinfod: semver:~1.0
 spec:
   replicas: 1
   selector:
@@ -21,7 +22,7 @@ spec:
         app: web
     spec:
       containers:
-      - image: registry.labs:5000/hello-app:1.0
+      - image: registry.labs:5000/hello-app:1.0.0
         name: hello-app
         resources: {}
 status: {}
