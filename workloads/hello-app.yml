@@ -22,7 +22,7 @@ spec:
         app: web
     spec:
       containers:
-      - image: registry.labs:5000/hello-app:1.0.0
+      - image: registry.labs:5000/hello-app:1.0.1
         name: hello-app
         resources: {}
 status: {}
