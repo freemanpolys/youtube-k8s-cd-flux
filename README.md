@@ -6,7 +6,7 @@ fluxctl install \
 --git-user=freemanpolys \
 --git-email=gaglo.kokou@orange-sonatel.com \
 --git-url=git@github.com:freemanpolys/youtube-k8s-cd-flux \
---git-path=devtest2020-workload,devtest2020-ns \
+--git-path=devtest2020-ns,devtest2020-workload \
 --namespace=flux | kubectl apply -f -
 
 kubectl -n flux rollout status deployment/flux
