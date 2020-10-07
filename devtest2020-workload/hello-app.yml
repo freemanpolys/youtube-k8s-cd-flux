@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: web
+  name: web
+  namespace: devtest2020
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.podinfod: semver:~1.0
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: web
+    spec:
+      containers:
+      - image: gcr.io/google-samples/hello-app:1.0.1
+        name: hello-app
+        resources: {}
+status: {}
