@@ -18,9 +18,8 @@ fluxctl identity --k8s-fwd-ns flux
 fluxctl sync --k8s-fwd-ns flux
 
 # Manips
-kubectl create deployment web --image=gcr.io/google-samples/hello-app:1.0.1
-
 Docker images :
+gcr.io/google-samples/hello-app:1.0
 bitnami/nginx:1.19.3
 
 
