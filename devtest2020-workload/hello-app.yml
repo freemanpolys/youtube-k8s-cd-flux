@@ -1,7 +1,8 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
+  creationTimestamp:
   labels:
     app: web
   name: web
@@ -17,12 +18,12 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
+      creationTimestamp:
       labels:
         app: web
     spec:
       containers:
-      - image: bitnami/nginx:1.19.3
+      - image: bitnami/nginx:1.19
         name: hello-app
         resources: {}
 status: {}
